@@ -10,7 +10,9 @@ private:
     int capacity;
     int lastIndex;
     int *ptr;
+    
 public:
+    // constructor
     ArrayADT()
     {
         capacity = 0;
@@ -37,6 +39,7 @@ public:
         return ptr[index];
     }
 
+    // for adding items to the list
     void setItem(int index, int value)
     {
         int i;
@@ -61,6 +64,7 @@ public:
         }
     }
 
+    // replacing values
     void editItem(int index, int value)
     {
         if(index > 0 || index > lastIndex)
@@ -68,12 +72,14 @@ public:
         else
             ptr[index] = value;
     }
-
+    
+    // length of the list
     int countItems()
     {
         return (lastIndex+1);
     }
 
+    // remove by index
     void removeItem(int index)
     {
         if(index < 0 || index > lastIndex)
@@ -90,6 +96,7 @@ public:
             lastIndex--;
     }
 
+    // for search by value
     int searchItem(int value)
     {
         if(lastIndex == -1){
@@ -104,6 +111,7 @@ public:
         return -1;
     }
 
+    // for sorting
     void sortArray()
     {
         int i, r, t;
@@ -118,6 +126,7 @@ public:
         }
     }
 
+    // For defining custom operator, you need a friend function
     friend ostream& operator <<(ostream &out, ArrayADT l)
     {
         if(l.lastIndex == -1)
@@ -127,6 +136,7 @@ public:
         return out;
     }
 
+    // destructor
     ~ArrayADT()
     {
         delete []ptr;

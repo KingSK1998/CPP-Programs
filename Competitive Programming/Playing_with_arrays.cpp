@@ -1,5 +1,5 @@
 /*******************************************************************
- * SOURCE: Appeared in Tech Mahindra Mindtree
+ * SOURCE: Appeared in Mindtree
  * AUTHOR: Shivam Kashyap - 28/Dec/2021
  * 
  * Question: You are given an integer N and integer array A as the input, 

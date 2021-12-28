@@ -1,5 +1,5 @@
 /******************************************************************************
- * SOURCE: Appeared in Tech Mahindra Mindtree
+ * SOURCE: Appeared in Mindtree
  * AUTHOR: Shivam Kashyap - 28/Dec/2021
  * 
  * QUESTION: Sherlock number is a number in which the sum of its digits is an even number. 
